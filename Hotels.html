@@ -22,6 +22,61 @@
 </header>
 
 <main>
+  <!--Фильтр поиска-->
+  <form action="https://echo.htmlacademy.ru" method="get">
+    <fieldset>
+      <legend>Инфраструктура:</legend>
+      <ul>
+        <li>
+          <input type="checkbox" name="pool" id="filter-pool" checked>
+          <label for="filter-pool">Бассейн</label>
+        </li>
+        <li>
+          <input type="checkbox" name="parking" id="filter-parking">
+          <label for="filter-parking">Парковка</label>
+        </li>
+        <li>
+          <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+          <label for="filter-wi-fi">wi-fi</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Тип жилья:</legend>
+      <ul>
+        <li>
+          <input type="checkbox" name="hotel" id="filter-hotel" checked>
+          <label for="filter-hotel">Гостиница</label>
+        </li>
+        <li>
+          <input type="checkbox" name="motel" id="filter-motel" checked>
+          <label for="filter-motel">Мотель</label>
+        </li>
+        <li>
+          <input type="checkbox" name="flat" id="filter-flat" checked>
+          <label for="filter-flat">Апартаменты</label>
+        </li>
+      </ul>
+    </fieldset> 
+    <fieldset>
+      <legend>Стоимость в сутки(Р):</legend>
+      <div>
+        <p>
+          <label for="from-0-field">От 0</label>
+          <input type="text" name="from 0" id="from-0-field">
+        </p>
+        <p>
+          <label for="to-3000-field">До 3000</label>
+          <input type="text" name="to 3000" id="to-3000-field">
+        </p>
+        <div>
+          <div>Ползунок</div>
+          <button type="button">От</button>
+          <button type="button">До</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
     <!--Результаты поиска-->
     <section>  
         <div>
