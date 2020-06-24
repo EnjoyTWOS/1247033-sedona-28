@@ -9,6 +9,8 @@
     --very-light-grey: #f2f2f2;
     --bright-blue: #23a9e1;
     --desaturated-blue: #81b3d3;
+    --slightly-blue: #669EC0;
+    --moderate-blue: #5496BD;
     --black-red: #231f20;
     --very-dark-red: #491213;
     --dark-orange: #766357;
@@ -196,4 +198,134 @@ img {
 
 .website-by a:focus{
     background-color: var(--greyish-pink) ;
+}
+
+/*Search results*/
+
+.found{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.sorting{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sortng-list{
+  list-style: none;
+}
+
+.sortng-list a{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  border: 1px dashed var(--basic-sky-blue);
+}
+
+.sortng-list a:hover{
+  color: var(--basic-sky-blue);
+  opacity: 1;
+}
+
+.sortng-list a:focus{
+  color: var(--basic-black);
+  opacity: 1;
+  border: none;
+}
+
+.sortng-list a:active{
+  color: var(--basic-sky-blue);
+  opacity: 1;
+  border: none;
+}
+
+.arrows{
+list-style: none;
+}
+
+.arrows a{
+  background-color: var(--light-grey);
+}
+
+.arrows a:hover{
+  background-color: var(--basic-black);
+}
+
+.arrows a:focus{
+  background-color: var(--basic-sky-blue);
+}
+
+.arrows a:active{
+  background-color: var(--basic-sky-blue);
+}
+
+.accomodation{
+  list-style: none;
+}
+
+.accomodation-img{
+  background-color: var(--dark-orange);
+}
+
+.hotel-name{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.hotel-name:hover{
+  color: var(--basic-sky-blue);
+}
+
+.hotel-name:focus{
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.detailed{
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-sky-blue);
+}
+
+.detailed:hover{
+background-color: var(--slightly-blue);
+}
+
+.detailed:focus{
+  color: var(--basic-white);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  background-color: var(--moderate-blue);
+}
+
+.to-book{
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--dark-orange);
+}
+
+.to-book:hover{
+  background-color: var(--greyish-orange);
+}
+
+.to-book:focus{
+  color: var(--basic-white);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  background-color: var(--desaturated-orange);
+}
+
+.rating{
+  text-align: center;
+  color: var(--very-dark-grey);
+  background-color: var(--very-light-grey);
 }
