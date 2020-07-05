@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+<header>
+  <nav  class="main-navigation">
+    <!--Лого города-->
+    <a href="index.html">
+      <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
+    </a>
+    <!--Навигация по сайту-->
+    <ul  class="site-navigation">
+      <li><a href="blank.html">Информация</a></li>
+      <li><a href="blank.html">Фото и видео</a></li>
+      <li><a href="blank.html">Карта штата</a></li>
+      <li><a>Гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!--Фильтр поиска-->
+  <form action="https://echo.htmlacademy.ru" method="get" class="background-img-hotels filter">
+    <fieldset>
+      <legend>Инфраструктура:</legend>
+      <ul class="filter-input">
+        <li>
+          <input type="checkbox" name="pool" id="filter-pool" checked class="filter-input-checkbox">
+          <label for="filter-pool">Бассейн</label>
+        </li>
+        <li>
+          <input type="checkbox" name="parking" id="filter-parking" class="filter-input-checkbox">
+          <label for="filter-parking">Парковка</label>
+        </li>
+        <li>
+          <input type="checkbox" name="wi-fi" id="filter-wi-fi" class="filter-input-checkbox"> 
+          <label for="filter-wi-fi">wi-fi</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Тип жилья:</legend>
+      <ul class="filter-input">
+        <li>
+          <input type="checkbox" name="hotel" id="filter-hotel" checked class="filter-input-checkbox">
+          <label for="filter-hotel">Гостиница</label>
+        </li>
+        <li>
+          <input type="checkbox" name="motel" id="filter-motel" checked class="filter-input-checkbox">
+          <label for="filter-motel">Мотель</label>
+        </li>
+        <li>
+          <input type="checkbox" name="flat" id="filter-flat" checked class="filter-input-checkbox">
+          <label for="filter-flat">Апартаменты</label>
+        </li>
+      </ul>
+    </fieldset> 
+    <fieldset>
+      <legend>Стоимость в сутки(Р):</legend>
+      <div>
+        <p>
+          <label for="from-0-field" class="filter-input-price">От 0</label>
+          <input type="text" name="from 0" id="from-0-field">
+        </p>
+        <p>
+          <label for="to-3000-field" class="filter-input-price">До 3000</label>
+          <input type="text" name="to 3000" id="to-3000-field">
+        </p>
+        <div>
+          <div class="visually-hidden">Ползунок</div>
+          <button type="button">От</button>
+          <button type="button">До</button>
+        </div>
+        <div>
+          <button type="button" class="filter-input-show">Показать</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+    <!--Результаты поиска-->
+    <section>  
+        <div>
+            <p class="found">
+               Найдено:3
+            </P>
+            <p class="sorting">
+                Сортировка
+            </P>
+            <ul class="sorting-list">
+            <li>
+                <a href="#">По цене</a>
+            </li>
+            <li>
+                <a href="#">По типу</a>
+            </li>
+            <li>
+                <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+          <ul class="arrows">
+            <li>
+                <a href="#" class="arrow-link path"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+            </li><li>
+                <a href="#" class="arrow-link.active path"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>></a>
+            </li>
+        </ul>
+      </div>
+<ul class="accomodation">
+    <!--Гостиница-->
+    <li>
+      <article>
+        <div class="accomodation-img">
+            <img src="img/layer21.jpg" width="135" height="90" alt="Гостиница">
+        </div>
+        <div>
+        <a href="#" class="hotel-name">Amaro Resort & Spa</a>
+        <p>
+            <span>Гостиница</span>
+            <a href="#" class="detailed">Подробнее</a>
+        </p>
+        <p>
+            <span>от 4000 Р.</span>
+            <a href="#" class="to-book">Забронировать</a>
+        </p>
+      </div>
+        <div>
+            <p>Stars</p>
+            <p class="rating">Рейтинг: 8.5</p>
+        </div>
+      </article>
+    </li>
+    <!--Мотель-->
+    <li>
+      <article>
+        <div class="accomodation-img">
+            <img src="img/layer89copy.jpg" width="135"  height="90" alt="Мотель">
+        </div>
+        <div>
+        <a href="#" class="hotel-name">Desert Quail Inn</a>
+        <p>
+            <span>Мотель</span>
+            <a href="#" class="detailed">Подробнее</a>
+        </p>
+        <p>
+            <span>от 3000 Р.</span>
+            <a href="#" class="to-book">Забронировать</a>
+        </p>
+      </div>
+        <div>
+            <p>Stars</p>
+            <p class="rating">Рейтинг: 8.9</p>
+        </div>
+      </article>  
+    </li>
+    <!--Апартаменты-->
+    <li>
+      <article>
+        <div class="accomodation-img">
+            <img src="img/rectangle.jpg" width="135"  height="90" alt="Апартаменты">
+        </div>
+        <div>
+        <a href="#" class="hotel-name">Desert Quail Inn</a>
+        <p>
+            <span>Апартаменты</span>
+            <a href="#" class="detailed">Подробнее</a>
+        </p>
+        <p>
+            <span>от 2000 Р.</span>
+            <a href="#" class="to-book">Забронировать</a>
+        </p>
+      </div>
+        <div>
+            <p>Stars</p>
+            <p class="rating">Рейтинг: 9.2</p>
+        </div>
+      </article>
+    </li>
+</ul>
+    </section>
+</main>
+    
+<footer class="footer">
+  <!--Обратная связь-->
+  <section class="contacts">
+    <p>#VISITSEDONA</p>
+      <p>>ТЕЛ:+7(495)666-01-66</p>
+  </section>
+  <!--Соц.сети-->
+  <section>
+    <ul>
+      <li class="social-button">
+        <a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twiiter"></a>
+      </li>
+      <li class="social-button">
+        <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+      </li>
+      <li class="social-button">
+        <a href="#"><img src="img/youtube.svg " width="20" height="16" alt="YouTube"></a>
+      </li>
+    </ul>
+  </section>
+  <!--Разработчик-->
+  <p class="website-by">
+    Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
+  </p>
+</footer>
+</body>
+</html>
