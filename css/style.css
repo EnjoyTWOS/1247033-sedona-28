@@ -25,6 +25,7 @@
     --greyish-orange: #604E43;
     --desaturated-orange: #503E33;
     --greyish-pink: #bdbbbc;
+    --disabled: #6a6a6a;
     }
 
     /* Tags */
@@ -104,7 +105,7 @@ img {
 
 .background-img{
     background-color: var(--basic-dark-grey);  
-    background: url(img/background-photo.png);
+    background-image: url(..img/background-photo.png) no-repeat;
     border: 1px solid var(--basic-black);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -249,20 +250,27 @@ img {
 list-style: none;
 }
 
-.arrows a{
-  background-color: var(--light-grey);
+.arrow-link path{
+fill: var(--light-grey);
 }
 
-.arrows a:hover{
-  background-color: var(--basic-black);
+.arrow-link.active path{
+  fill: var(--basic-sky-blue);
 }
 
-.arrows a:focus{
-  background-color: var(--basic-sky-blue);
+.arrow-link path:hover,
+.arrow-link.active path:hover{
+  fill: var(--basic-black);
 }
 
-.arrows a:active{
-  background-color: var(--basic-sky-blue);
+.arrow-link path:focus,
+.arrow-link.active path:focus{
+  fill: var(--basic-sky-blue);
+}
+
+.arrow-link path:active
+.arrow-link.active path:active{
+  fill: var(--basic-sky-blue);
 }
 
 .accomodation{
@@ -328,4 +336,90 @@ background-color: var(--slightly-blue);
   text-align: center;
   color: var(--very-dark-grey);
   background-color: var(--very-light-grey);
+}
+
+/*Advantage*/
+
+.advantage-background-main{
+  background-color: var(--basic-sky-blue);
+}
+
+.advantage-h2-main{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.advantage-main{
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.advantage-minor-strong{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-black)
+}
+
+.advantage-minor{
+ text-align: center;
+}
+
+.advantage-backgound-minor{
+background-color: var(--mostly-white);
+}
+
+/*Filters*/
+
+.background-img-hotels{
+  background-color: var(--basic-dark-grey);  
+  background-image: url(..img/background.jpg) no-repeat;
+}
+
+.filter legend{
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--basic-white);
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-input-checkbox path{
+  fill: var(--basic-white);
+}
+
+.filter-input-checkbox:hover path{
+  fill: var(--basic-white);
+}
+
+.filter-input-checkbox:disabled path{
+  fill: var(--disabled);
+}
+
+.filter-input label{
+  color: var(--basic-white);
+}
+
+.filter-input-price{
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.filter-input-show{
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.filter-input-show:hover{
+  color: var(--basic-black);
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
