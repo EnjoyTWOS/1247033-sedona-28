@@ -24,10 +24,10 @@
   </nav>
 </header>
 
-<main>
+<main class="page-hotels container">
   <!--Фильтр поиска-->
   <form action="https://echo.htmlacademy.ru" method="get" class="background-img-hotels filter">
-    <fieldset>
+    <fieldset class="infrastructure">
       <legend>Инфраструктура:</legend>
       <ul class="filter-input">
         <li>
@@ -44,7 +44,7 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset>
+    <fieldset class="infrastructure">
       <legend>Тип жилья:</legend>
       <ul class="filter-input">
         <li>
@@ -61,7 +61,7 @@
         </li>
       </ul>
     </fieldset> 
-    <fieldset>
+    <fieldset class="price-a-day">
       <legend>Стоимость в сутки(Р):</legend>
       <div>
         <p>
@@ -84,7 +84,7 @@
     </fieldset>
   </form>
     <!--Результаты поиска-->
-    <section>  
+    <section class="results">  
         <div>
             <p class="found">
                Найдено:3
@@ -113,7 +113,7 @@
       </div>
 <ul class="accomodation">
     <!--Гостиница-->
-    <li>
+    <li class="accomodation-item">
       <article>
         <div class="accomodation-img">
             <img src="img/layer21.jpg" width="135" height="90" alt="Гостиница">
@@ -129,14 +129,14 @@
             <a href="#" class="to-book">Забронировать</a>
         </p>
       </div>
-        <div>
+        <div class="stars">
             <p>Stars</p>
             <p class="rating">Рейтинг: 8.5</p>
         </div>
       </article>
     </li>
     <!--Мотель-->
-    <li>
+    <li class="accomodation-item">
       <article>
         <div class="accomodation-img">
             <img src="img/layer89copy.jpg" width="135"  height="90" alt="Мотель">
@@ -152,14 +152,14 @@
             <a href="#" class="to-book">Забронировать</a>
         </p>
       </div>
-        <div>
+        <div class="stars">
             <p>Stars</p>
             <p class="rating">Рейтинг: 8.9</p>
         </div>
       </article>  
     </li>
     <!--Апартаменты-->
-    <li>
+    <li class="accomodation-item">
       <article>
         <div class="accomodation-img">
             <img src="img/rectangle.jpg" width="135"  height="90" alt="Апартаменты">
@@ -175,7 +175,7 @@
             <a href="#" class="to-book">Забронировать</a>
         </p>
       </div>
-        <div>
+        <div class="stars">
             <p>Stars</p>
             <p class="rating">Рейтинг: 9.2</p>
         </div>
@@ -186,13 +186,14 @@
 </main>
     
 <footer class="footer">
+  <div class="container">
   <!--Обратная связь-->
   <section class="contacts">
     <p>#VISITSEDONA</p>
       <p>>ТЕЛ:+7(495)666-01-66</p>
   </section>
   <!--Соц.сети-->
-  <section>
+  <section class="social">
     <ul>
       <li class="social-button">
         <a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twiiter"></a>
@@ -209,6 +210,7 @@
   <p class="website-by">
     Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
   </p>
+ </div>
 </footer>
 </body>
 </html>

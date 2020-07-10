@@ -100,30 +100,32 @@
     </section>
     <!--Поиск гостиницы-->
     <section>
+      <div class="flex-container-interest">
       <strong class="interested-in-strong">Заинтересовались?</strong>
       <p class="interested-in-normal">
         Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне
       </p>
+      </div>
       <button type="button" class="button">Поиск гостиницы в Седоне</button>
       <!--Форма поиска гостиницы-->
-      <form action="https://echo.htmlacademy.ru" method="post">
-      <div>
+      <form action="https://echo.htmlacademy.ru" method="post" class="search">
+      <div class="search-item">
         <label for="check-in-date">Дата заезда:</label>
         <input id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017">
         <button type="button">Календарь</button>
       </div>
-      <div>
+      <div  class="search-item">
         <label for="check-out-date">Дата выезда:</label>
         <input id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017">
         <button type="button">Календарь</button>
       </div>
-      <div>
+      <div  class="search-item">
         <label for="adults-amount">Взрослые:</label>
         <button type="button">Минус</button>
         <input type="text" id="adults-amount" name="adults" placeholder="2">
         <button type="button">Плюс</button>
       </div>
-      <div>
+      <div  class="search-item">
         <label for="kids-amount">Дети:</label>
         <button type="button">Минус</button>
         <input type="text" id="kids-amount" name="kids" placeholder="0">
@@ -140,13 +142,14 @@
   </main>
 
     <footer class="footer">
+      <div class="container">
       <!--Обратная связь-->
       <section class="contacts">
         <p>#VISITSEDONA</p>
           <p>>ТЕЛ:+7(495)666-01-66</p>
       </section>
       <!--Соц.сети-->
-      <section>
+      <section class="social">
         <ul>
           <li class="social-button">
             <a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twiiter"></a>
@@ -163,6 +166,7 @@
       <p class="website-by">
         Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
       </p>
+     </div>
     </footer>
   </body>
 </html>
