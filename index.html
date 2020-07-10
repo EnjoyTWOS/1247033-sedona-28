@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -7,20 +7,22 @@
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-<header>
+  <body class="page-body">
+<header class="main-header">
   <nav class="main-navigation">
     <!--Лого города-->
-      <a>
+      <a class="main-header-logo">
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
     <!--Навигация по сайту-->
+   <div class="container">
     <ul class="site-navigation">
       <li><a href="blank.html">Информация</a></li>
       <li><a href="blank.html">Фото и видео</a></li>
       <li><a href="blank.html">Карта штата</a></li>
       <li><a href="hotels.html">Гостиницы</a></li>
     </ul>
+   </div>
   </nav>
 </header>
 
@@ -28,23 +30,25 @@
       <h1 class="visually-hidden">Седона</h1>
 
       <!--Главное лого сайта-->
-      <section>
-      <div class="background-img">
+      <section class="flex">
+      <div class="background-img main-logo">
         <img src="img/welcome.png" width="457" height="351" alt="Sedona">
       </div>
       </section>
       <!--Преимущества Седоны-->
-      <section>
+      <section class="advantages">
+       <div class="advantage-flex">
       <strong class="advantage-strong">Седона - небольшой городок в Аризоне, заслуживающий большего</strong>
       <p class="advantage-normal">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон</p>
-      <ul>
+       </div> 
+      <ul class="advantage-list grid-advantages">
               <!--Преимущество №1-->
         <li>
           <div class="advantage-background-main">
           <h2 class="advantage-h2-main">Настоящий городок</h2>
           <p class="advantage-main">-№1-</p>
           <p class="advantage-main">Седона - не атракцион для туристов, там течет своя жизнь</p>
-          <div>
+          <div class="grid-img-1">
             <img src="img/image.jpg" width="800" height="256" alt="Real town">
           </div>
         </div>
@@ -65,7 +69,7 @@
       </li>
         <!--Преимущество 2-->
         <li>
-          <div>
+          <div class="grid-img-2">
             <img src="img/image-1.jpg" width="800" height="256" alt="Devil's bridge">
           </div>
           <div class="advantage-backgound-main">

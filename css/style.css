@@ -55,9 +55,31 @@ img {
     height: auto;
   }
 
+  /* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Main header */
+
+.main-header {
+  margin-bottom: 62px;
+}
+
   /*Navigation*/
  
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
     line-height: 26px;
     color: var(--basic-black);
@@ -65,7 +87,45 @@ img {
     text-align: center;
   }
 
+  /*Logo*/
+  
+  .main-header-logo {
+    width: 138px;
+    height: 70px;
+    margin-left: 133px;
+    margin-right: 147px;
+  } 
+
+  /* Container */
+
+.container {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex{
+  display: flex;
+}
+
+.main-logo{
+  width: 457px;
+  height: 351px;
+  margin-bottom: 43px;
+  align-items: center;
+}
+
+.site-navigation .container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .site-navigation {
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 77px;
     list-style: none;
   }
 
@@ -112,6 +172,16 @@ img {
 
   /*Advantages*/
 
+.advantages{
+  margin-bottom: 60px;
+}
+
+.advantage-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .advantage-strong{
     font-weight: bold;
     font-size: 21px;
@@ -124,6 +194,27 @@ img {
 .advantage-normal{
     text-align: center;
   }
+
+.advantage-flex{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 51px;
+}
+/*Advantages grid*/
+
+.grid-advantages{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px 256px 256px 256px;
+}
+
+.grid-img-1{
+  grid-column: 2/-1; 
+}
+
+.grid-img-2{
+  grid-column: 1/-2;
+}
 
   /*Hotel search*/
 
