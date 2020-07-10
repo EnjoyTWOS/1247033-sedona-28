@@ -539,6 +539,7 @@ fill: var(--light-grey);
 
 .accomodation{
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: 73px;
   margin-bottom: 30px;
