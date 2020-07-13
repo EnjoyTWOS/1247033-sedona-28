@@ -8,6 +8,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page-body">
+    <div class="container">
 <header class="main-header">
   <nav class="main-navigation">
     <!--Лого города-->
@@ -15,89 +16,89 @@
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
     <!--Навигация по сайту-->
-   <div class="container">
     <ul class="site-navigation">
       <li><a href="blank.html">Информация</a></li>
       <li><a href="blank.html">Фото и видео</a></li>
       <li><a href="blank.html">Карта штата</a></li>
       <li><a href="hotels.html">Гостиницы</a></li>
     </ul>
-   </div>
   </nav>
 </header>
 
     <main>
       <h1 class="visually-hidden">Седона</h1>
 
-      <!--Главное лого сайта-->
-      <section class="flex">
-      <div class="background-img main-logo">
+      <!--Главное промо сайта-->
+      <section class="promo">
+      <div class="main-logo">
         <img src="img/welcome.png" width="457" height="351" alt="Sedona">
       </div>
       </section>
       <!--Преимущества Седоны-->
       <section class="advantages">
        <div class="advantage-flex">
-      <strong class="advantage-strong">Седона - небольшой городок в Аризоне, заслуживающий большего</strong>
-      <p class="advantage-normal">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон</p>
+      <strong class="advantage-strong">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
+      <p class="advantage-normal">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</p>
        </div> 
-      <ul class="advantage-list grid-advantages">
+      <ul class="advantage-list">
               <!--Преимущество №1-->
         <li>
+          <div class="advantage-one-flex">
           <div class="advantage-background-main">
-          <div class="grid-1">
           <h2 class="advantage-h2-main">Настоящий городок</h2>
           <p class="advantage-main">-№1-</p>
           <p class="advantage-main">Седона - не атракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <div class="grid-img-1">
+        </div>
+          <div class="advantage-flex-image">
             <img src="img/image.jpg" width="800" height="256" alt="Real town">
           </div>
         </div>
-        <ul>
-          <li class="grid-2">
+        <ul class="advantages-minor">
+          <li class="advantage-minor-flex">
             <strong class="advantage-minor-strong">Жильё</strong>
-            <p class="advantage-minor">Рекомендуем пожить в настоящем отеле, все как в кино!</p>
+            <p class="advantage-minor">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li  class="grid-3">
+          <li  class="advantage-minor-flex">
             <strong class="advantage-minor-strong">Еда</strong>
-            <p class="advantage-minor">Всегда заказывайте фирменый бургер, Вы не разочаруетесь</p>
+            <p class="advantage-minor">Всегда заказывайте фирменый бургер, Вы не разочаруетесь!</p>
           </li>
-          <li  class="grid-4">
+          <li  class="advantage-minor-flex">
             <strong class="advantage-minor-strong">Сувениры</strong>
-            <p class="advantage-minor">Не только китайского, но и местного производства</p>
+            <p class="advantage-minor">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </li>
         <!--Преимущество 2-->
-        <li>
-          <div class="grid-img-2">
+        <li class="advantage-one-flex">
+          <div class="advantage-flex-image">
             <img src="img/image-1.jpg" width="800" height="256" alt="Devil's bridge">
           </div>
-          <div class="advantage-backgound-main grid-5">
+          <div class="advantage-background-main">
           <h2 class="advantage-h2-main">Там есть мост дьявола</h2>
           <p class="advantage-main">-№2-</p>
           <p class="advantage-main">Да, по нему можно пройти, если, конечно, Вы осмелитесь</p>
         </div>
         </li>
         <!--Преимущество 3-->
-        <li class="advantage-backgound-minor grid-6">
-          <h2 class="advantage-h2-main">Небольшая площадь</h2>
-          <p class="advantage-main">-№3-</p>
-          <p class="advantage-main">Все достопримечателности находятся очень близко</p>
-        </li class="advantage-backgound-minor">
+        <div class="advantages-grid">
+        <li class="advantage-background-minor">
+          <h2 class="advantage-h2-secondary">Небольшая площадь</h2>
+          <p class="advantage-secondary">-№3-</p>
+          <p class="advantage-secondary">Все достопримечателности находятся очень близко</p>
+        </li>
          <!--Преимущество 4-->
-         <li class="advantage-backgound-minor grid-7">
-          <h2 class="advantage-h2-main">Красивая дорога</h2>
-          <p class="advantage-main">-№4-</p>
-          <p class="advantage-main">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+         <li class="advantage-background-minor">
+          <h2 class="advantage-h2-secondary">Красивая дорога</h2>
+          <p class="advantage-secondary">-№4-</p>
+          <p class="advantage-secondary">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <!--Преимущество 5-->
-        <li class="advantage-backgound-minor grid-8">
-          <h2 class="advantage-h2-main">Мало туристов</h2>
-          <p class="advantage-main">-№5-</p>
-          <p class="advantage-main">Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="advantage-background-minor">
+          <h2 class="advantage-h2-secondary">Мало туристов</h2>
+          <p class="advantage-secondary">-№5-</p>
+          <p class="advantage-secondary">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
+      </div>
       </ul>
     </section>
     <!--Поиск гостиницы-->
@@ -107,33 +108,36 @@
       <p class="interested-in-normal">
         Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне
       </p>
-      </div>
-      <button type="button" class="button">Поиск гостиницы в Седоне</button>
+      
+<button type="button" class="button">Поиск гостиницы в Седоне</button>
+    </div>
       <!--Форма поиска гостиницы-->
-      <form action="https://echo.htmlacademy.ru" method="post" class="search">
+      <form action="https://echo.htmlacademy.ru" method="post" class="form-flex">
       <div class="search-item">
-        <label for="check-in-date">Дата заезда:</label>
-        <input id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017">
-        <button type="button">Календарь</button>
+        <label for="check-in-date" class="form-text">Дата заезда:</label>
+        <input id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017" class="search-item-input">
+        <button type="button" class="visually-hidden">Календарь</button>
       </div>
       <div  class="search-item">
-        <label for="check-out-date">Дата выезда:</label>
-        <input id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017">
-        <button type="button">Календарь</button>
+        <label for="check-out-date" class="form-text">Дата выезда:</label>
+        <input id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017" class="search-item-input check-out">
+        <button type="button" class="visually-hidden">Календарь</button>
+      </div>
+      <div class="search-amount">
+      <div  class="search-item">
+        <label for="adults-amount" class="form-text">Взрослые:</label>
+        <button type="button" class="visually-hidden">Минус</button>
+        <input type="text" id="adults-amount" name="adults" placeholder="2" class="search-item-input-number adults">
+        <button type="button" class="visually-hidden">Плюс</button>
       </div>
       <div  class="search-item">
-        <label for="adults-amount">Взрослые:</label>
-        <button type="button">Минус</button>
-        <input type="text" id="adults-amount" name="adults" placeholder="2">
-        <button type="button">Плюс</button>
+        <label for="kids-amount" class="form-text">Дети:</label>
+        <button type="button" class="visually-hidden">Минус</button>
+        <input type="text" id="kids-amount" name="kids" placeholder="0" class="search-item-input-number">
+        <button type="button" class="visually-hidden">Плюс</button>
       </div>
-      <div  class="search-item">
-        <label for="kids-amount">Дети:</label>
-        <button type="button">Минус</button>
-        <input type="text" id="kids-amount" name="kids" placeholder="0">
-        <button type="button">Плюс</button>
-      </div>
-      <button type="submit">Найти</button>
+    </div>
+      <button type="submit" class="search-button">Найти</button>
       </form>
       <!--Карта-->
       <div>
@@ -144,11 +148,11 @@
   </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer-grid">
       <!--Обратная связь-->
       <section class="contacts">
-        <p>#VISITSEDONA</p>
-          <p>>ТЕЛ:+7(495)666-01-66</p>
+        <p class="visit">#VISITSEDONA</p>
+          <p class="phone">ТЕЛ:+7(495)666-01-66</p>
       </section>
       <!--Соц.сети-->
       <section class="social">
@@ -166,9 +170,10 @@
       </section>
       <!--Разработчик-->
       <p class="website-by">
-        Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
+        Website by <a href="https://htmlacademy.ru" class="website-by-link"><img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML academy"></a>
       </p>
      </div>
     </footer>
+  </div>
   </body>
 </html>

@@ -8,18 +8,19 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page-body">
-<header>
-  <nav  class="main-navigation">
+    <div class="container">
+<header class="main-header">
+  <nav class="main-navigation">
     <!--Лого города-->
-    <a href="index.html">
-      <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
-    </a>
+      <a href="index.html" class="main-header-logo">
+        <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
+      </a>
     <!--Навигация по сайту-->
-    <ul  class="site-navigation">
+    <ul class="site-navigation">
       <li><a href="blank.html">Информация</a></li>
       <li><a href="blank.html">Фото и видео</a></li>
       <li><a href="blank.html">Карта штата</a></li>
-      <li><a>Гостиницы</a></li>
+      <li><a href="hotels.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -107,7 +108,7 @@
             <li>
                 <a href="#" class="arrow-link path"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
             </li><li>
-                <a href="#" class="arrow-link.active path"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>></a>
+                <a href="#" class="arrow-link-active path"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
             </li>
         </ul>
       </div>
@@ -186,11 +187,11 @@
 </main>
     
 <footer class="footer">
-  <div class="container">
+  <div class="footer-grid">
   <!--Обратная связь-->
   <section class="contacts">
-    <p>#VISITSEDONA</p>
-      <p>>ТЕЛ:+7(495)666-01-66</p>
+    <p class="visit">#VISITSEDONA</p>
+      <p class="phone">ТЕЛ:+7(495)666-01-66</p>
   </section>
   <!--Соц.сети-->
   <section class="social">
@@ -208,9 +209,10 @@
   </section>
   <!--Разработчик-->
   <p class="website-by">
-    Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
+    Website by <a href="https://htmlacademy.ru" class="website-by-link"><img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML academy"></a>
   </p>
  </div>
 </footer>
+</div>
 </body>
 </html>
