@@ -36,7 +36,7 @@
           <!--Преимущества Седоны-->
          <section class="advantages">
            <div class="advantage-flex">
-             <strong class="advantage-strong">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
+             <strong class="advantage-strong">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</strong>
              <p class="advantage-normal">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</p>
            </div> 
            <ul class="advantage-list advantages-flex">
@@ -44,9 +44,9 @@
              <li>
                <div class="advantage-one-flex">
                  <div class="advantage-background-main">
-                   <h2 class="advantage-h2-main">Настоящий городок</h2>
+                   <h2 class="advantage-h2-main">Настоящий <br> городок</h2>
                    <p class="advantage-main">&ndash;  №1 &ndash; </p>
-                   <p class="advantage-main">Седона - не атракцион для туристов, там течет своя жизнь</p>
+                   <p class="advantage-main">Седона &ndash; не атракцион для туристов, там <br> течет своя жизнь</p>
                  </div>
                  <div class="advantage-flex-image">
                    <img src="img/image.jpg" width="800" height="256" alt="Real town">
@@ -72,29 +72,29 @@
                <div class="advantage-flex-image">
                  <img src="img/image-1.jpg" width="800" height="256" alt="Devil's bridge">
                </div>
-               <div class="advantage-background-main">
-                 <h2 class="advantage-h2-main">Там есть мост дьявола</h2>
+               <div class="advantage-background-main-2">
+                 <h2 class="advantage-h2-2-main">Там есть <br> мост дьявола</h2>
                  <p class="advantage-main">&ndash; №2 &ndash;</p>
-                 <p class="advantage-main">Да, по нему можно пройти, если, конечно, Вы осмелитесь</p>
+                 <p class="advantage-main">Да, по нему можно пройти, если, конечно,<br> Вы осмелитесь</p>
                </div>
              </li>
               <!--Преимущество 3-->
              <li class="advantage-background-minor">
-               <h2 class="advantage-h2-secondary">Небольшая площадь</h2>
+               <h2 class="advantage-h2-secondary">Небольшая <br> площадь</h2>
                <p class="advantage-secondary">&ndash; №3 &ndash;</p>
-               <p class="advantage-secondary">Все достопримечателности находятся очень близко</p>
+               <p class="advantage-secondary">Все достопримечателности <br> находятся очень близко</p>
              </li>
              <!--Преимущество 4-->
              <li class="advantage-background-minor">
-               <h2 class="advantage-h2-secondary">Красивая дорога</h2>
+               <h2 class="advantage-h2-secondary-4">Красивая <br> дорога</h2>
                <p class="advantage-secondary">&ndash; №4 &ndash;</p>
-               <p class="advantage-secondary">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+               <p class="advantage-secondary">Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
              </li>
         <!--Преимущество 5-->
              <li class="advantage-background-minor">
-               <h2 class="advantage-h2-secondary">Мало туристов</h2>
+               <h2 class="advantage-h2-secondary-5">Мало <br> туристов</h2>
                <p class="advantage-secondary">&ndash; №5 &ndash;</p>
-               <p class="advantage-secondary">Большинство едет в Гранд Каньон и толпится там</p>
+               <p class="advantage-secondary">Большинство едет в Гранд Каньон <br> и толпится там</p>
              </li>
            </ul>
          </section>
@@ -104,34 +104,34 @@
            <div class="flex-container-interest">
              <strong class="interested-in-strong">Заинтересовались?</strong>
              <p class="interested-in-normal">
-              Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне
+              Укажите предпологаемые даты поездки, <br> и мы покажем Вам лучшие предложения гостиниц в Седоне
              </p>
-             <button type="button" class="button">Поиск гостиницы в Седоне</button>
+             <button type="button" class="button button-form">Поиск гостиницы в Седоне</button>
            </div>
           <!--Форма поиска гостиницы-->
-           <form action="https://echo.htmlacademy.ru" method="post" class="form-flex">
+           <form action="https://echo.htmlacademy.ru" method="post" class="form-flex form-show">
              <div class="search-item">
                <label for="check-in-date" class="form-text">Дата заезда:</label>
                <input id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017" class="search-item-input">
-               <button type="button" class="visually-hidden">Календарь</button>
+               <button type="button" aria-label="Календарь" class="calendar"></button>
              </div>
              <div  class="search-item">
                <label for="check-out-date" class="form-text">Дата выезда:</label>
                <input id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017" class="search-item-input check-out">
-               <button type="button" class="visually-hidden">Календарь</button>
+               <button type="button" aria-label="Календарь" class="calendar-2"></button>
              </div>
              <div class="search-amount">
                <div  class="search-item">
                  <label for="adults-amount" class="form-text">Взрослые:</label>
-                 <button type="button" class="visually-hidden">Минус</button>
+                 <button type="button" aria-label="Минус" class="minus"></button>
                  <input type="text" id="adults-amount" name="adults" placeholder="2" class="search-item-input-number adults">
-                 <button type="button" class="visually-hidden">Плюс</button>
+                 <button type="button" aria-label="Плюс" class="plus"></button>
                </div>
                <div class="search-item">
                  <label for="kids-amount" class="form-text">Дети:</label>
-                 <button type="button" class="visually-hidden">Минус</button>
+                 <button type="button" aria-label="Минус" class="minus-2"></button>
                  <input type="text" id="kids-amount" name="kids" placeholder="0" class="search-item-input-number">
-                 <button type="button" class="visually-hidden">Плюс</button>
+                 <button type="button" aria-label="Плюс" class="plus-2"></button>
                </div>
              </div>
             <button type="submit" class="search-button">Найти</button>
@@ -180,5 +180,6 @@
        </footer>
 
     </div>
+    <script src="../1247033-sedona-28/js/script.js"></script>
   </body>
 </html>
