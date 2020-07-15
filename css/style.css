@@ -340,13 +340,13 @@ img {
 }
 
 /*Advantages 3-5*/
-
-.advantages-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.advantages-flex{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantage-background-minor {
+  width: 400px;
   background-color: var(--mostly-white);
   padding-top: 47px;
   padding-bottom: 54px;
@@ -534,6 +534,7 @@ background-color: var(--basic-green);
   top: 2230px;
   z-index: 1;
   background-color: var(--basic-green);
+  border: none;
 }
 
 /*Footer*/
@@ -778,16 +779,12 @@ fill: var(--light-grey);
 }
 
 .accomodation-item {
+  display: flex;
   width: 100%;
   padding-right: 73px;
   padding-left: 73px;
   border-bottom: 1px solid var(--metal-grey);
 }
-
-.accomodation-item article {
-  display: flex;
-}
-
 
 .accomodation-img {
   width: 135px;
@@ -981,10 +978,6 @@ fill: var(--light-grey);
   margin-left: 344px;
 }
 
-.button-flex {
-  display: flex;
-}
-
 .background-img-hotels {
   background-color: var(--basic-dark-grey);  
   background-image: url(../img/background.jpg);
@@ -1023,12 +1016,57 @@ fill: var(--light-grey);
 }
 
 .filter-input-price {
+  display: inline-block;
+  vertical-align: baseline;
   color: var(--basic-white);
   text-align: center;
-  width: 159px;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 6px 50px 8px 50px;
+  margin: 0;
+  padding: 0;
+  padding-right: 3px;
+}
+
+.button-flex {
+  display: flex;
+  width: 317px;
+  justify-content: space-around;
   border: 2px solid var(--basic-white); 
+  background-image: url("../img/rectangle-border.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.price-from {
+  width:160px;
+  margin: 0;
+  padding: 0;
+  padding-left: 66px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.price-to{
+  width: 156px;
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 52px;
+}
+
+.price-controls input {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 39px;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  color: var(--basic-white);
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .filter-input-show {
@@ -1053,21 +1091,10 @@ fill: var(--light-grey);
   border-radius: 2px;
 }
 
-.filter-border-1 {
-  border-right: none;
-  background-image: url("../img/rectangle-border.png");
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.filter-border-2 {
-  border-left: none;
-}
-
 /*Scale bar*/
 
 .range-filter {
-  width: 285px;
+  width: 316px;
   margin-top: 11px;
 }
 
@@ -1108,5 +1135,5 @@ fill: var(--light-grey);
 }
 
 .range-controls .toggle-max {
-  left: 186px;
+  left: 210px;
 }
