@@ -31,7 +31,7 @@
   --basic-green: #bbf1bb;
 }
 
-    /* Tags */
+  /* Tags */
 
 *, *::before, *::after{
   box-sizing: border-box;
@@ -180,7 +180,7 @@ img {
 .promo {
   background-color: var(--basic-dark-grey);  
   background-image: 
-    url(../img/shape.png),
+    url(../img/shape.svg),
     url(../img/background-photo.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
